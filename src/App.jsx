@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { Container, Grid, Button, TextField, Select, MenuItem, FormControl, InputLabel, Box } from "@mui/material";
 import QuotationTable from "./QuotationTable";
 
@@ -10,10 +10,6 @@ const products = [
 ];
 
 function App() {
-  const itemRef = useRef();
-  const ppuRef = useRef();
-  const qtyRef = useRef();
-  const discountRef = useRef();
 
   // State management
   const [dataItems, setDataItems] = useState([]);
